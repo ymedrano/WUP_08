@@ -45,4 +45,14 @@ summary.lm(chest)
 
 The CHEST model using chest shows that the adjusted r squared is 0.786 and the residual standard error is 4.939. in he simp model, the adjusted r square was 0.747 and the residual standard error was 5.376. The CHEST model is better because it explains more of the error and the residual standard error is smaller.  
 
+```{r}
+headwidth <- lm(LENGTH~HEADWTH,data=bears)
+plot(LENGTH~HEADWTH,data=bears)
+abline(headwidth)
+summary.lm(headwidth)
+```
+
+The model headwidth is not as good because the adjusted r squared has gone down and the residual standard error has gone up.  
+
+
 
