@@ -52,7 +52,13 @@ abline(headwidth)
 summary.lm(headwidth)
 ```
 
-The model headwidth is not as good because the adjusted r squared has gone down and the residual standard error has gone up.  
+The model headwidth is not as good because the adjusted r squared has gone down to 0.532 and the residual standard error has gone up to 7.32.  
 
+```{r}
+headlength <- lm(LENGTH~HEADLEN,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(headlength)
+summary.lm(headlength)
+```
 
-
+This model shows a better prediction found so far because its adjusted r squared is 0.843 and the residual standard error is 4.235.  
